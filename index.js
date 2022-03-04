@@ -3,7 +3,7 @@
 
 const customExpress = require('./config/customExpress');
 const conexao = require('./infraestrutura/conexao');
-const app = customExpress();
+const Tabelas = require('./infraestrutura/tabelas');
 
 // Estabelendo conexão com o bd
 conexao.connect(erro => {
@@ -11,6 +11,13 @@ conexao.connect(erro => {
         console.log(erro);
     } else {
         console.log('Conectado com sucesso');
+
+        // Criando as tabelas do bd
+        Tabelas.init(conexao);
+        
+        // Iniciando app
+        const app = customExpress();
+
         // Subindo app no server
         app.listen(3000, () => {
             console.log('Servidor rodando na porta 3000');
