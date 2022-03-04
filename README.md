@@ -3,3 +3,4 @@
 - nodemon
 - consign
 - body-parser
+- mysql

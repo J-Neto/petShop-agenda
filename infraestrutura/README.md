@@ -1,0 +1,3 @@
+- tudo relacionado a infraestrutura do projeto
+- arquivos que não são regras de negócio mas que precisamos para executar o app
+- ex: banco de dados
