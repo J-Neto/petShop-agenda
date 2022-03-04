@@ -3,4 +3,4 @@
 - nodemon
 - consign
 - body-parser
-- mysql
+- mysql2 (gera menos erros que o 1)

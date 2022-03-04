@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 // Criando arquivos de conexão com o bd
 const conexao = mysql.createConnection({
