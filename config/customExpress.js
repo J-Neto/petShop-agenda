@@ -9,7 +9,7 @@ module.exports = () => {
     const app = express();
 
     // Configura o app para ler as info recebidas
-    app.use(bodyParser. urlencoded({extended: true}));
+    app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
 
     // Configura o app fazendo o app ler os controllers
